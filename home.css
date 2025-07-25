@@ -9,8 +9,6 @@
     /* Adjust for contrast */
 }
 
-
-
 /* All other styles for content stay the same */
 body {
     margin: 0;
@@ -34,13 +32,10 @@ body {
 
 .main img {
     width: 300px;
-    /* Adjust size as needed */
     height: 300px;
     object-fit: cover;
-    /* Ensures the image fills the circle */
     border-radius: 50%;
-    /* Makes it circular */
-    border: 2px solid #ccc;
+    border: #ccc;
 }
 
 .button-containe {
@@ -48,6 +43,7 @@ body {
 }
 
 .main a button {
+    text-decoration: none;
     display: block;
     width: 200px;
     height: 38px;
@@ -104,3 +100,22 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* @media (max-width: 768px) {
+    .circle-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .button-group button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificate-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+} */
