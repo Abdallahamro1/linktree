@@ -1,0 +1,106 @@
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    /* Adjust for contrast */
+}
+
+
+
+/* All other styles for content stay the same */
+body {
+    margin: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    /* or any preferred font */
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 100vh;
+    /* Full viewport height */
+    /* background-color: #f5f5f5; */
+    /* Optional: page background */
+}
+
+.main img {
+    width: 300px;
+    /* Adjust size as needed */
+    height: 300px;
+    object-fit: cover;
+    /* Ensures the image fills the circle */
+    border-radius: 50%;
+    /* Makes it circular */
+    border: 2px solid #ccc;
+}
+
+.button-containe {
+    padding-top: 30px;
+}
+
+.main a button {
+    display: block;
+    width: 200px;
+    height: 38px;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 7px;
+    background-image: url('assets/wallpaperflare.com_wallpaper.jpg');
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main a button svg {
+    align-items: center;
+    gap: 8px;
+    /* space between text and SVG */
+    border: none;
+    padding-left: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.button-containe a button button:hover {
+    background-color: #45a049;
+}
+
+.cert-cont {
+    color: white;
+    /* background-color: #f5f5f5; */
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 20px;
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    /* background-color: #f5f5f5; */
+    text-align: center;
+}
+
+.certificate-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
